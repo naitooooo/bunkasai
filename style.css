@@ -1,0 +1,117 @@
+/* ===== 全体設定 ===== */
+body {
+  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+  background: url('https://img.freepik.com/free-photo/blue-sky-with-clouds_53876-16237.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center fixed;
+  /* 背景画像 */
+  background-size: cover;
+  color: lch(0% 0 0);
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== ヘッダー ===== */
+header {
+  background-color: rgba(255, 216, 225, 0.7);
+  /* 半透明の背景色 */
+  color: #333;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== 自己紹介セクション ===== */
+.intro {
+  text-align: center;
+  background-color: rgba(255, 240, 245, 0.8);
+  /* 半透明の背景色 */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.intro img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* ===== 趣味セクション ===== */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hobby-card {
+  background-color: rgba(255, 238, 248, 0.8);
+  /* 半透明の背景色 */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.hobby-card:hover {
+  transform: scale(1.03);
+}
+
+.hobby-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ===== フッター ===== */
+footer {
+  background-color: rgba(255, 216, 225, 0.7);
+  /* 半透明の背景色 */
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.copy {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0;
+}
+
+/* ===== レスポンシブ対応 ===== */
+@media (max-width: 600px) {
+  .hobbies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hobby-card {
+    width: 90%;
+  }
+}
